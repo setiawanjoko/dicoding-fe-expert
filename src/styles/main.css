@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff8e8;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 100vw;
+  display: grid;
+  background-color: #1a1a19;
+  font-size: 1em;
+}
+
+nav {
+  background-color: #859F3D;
+  display: grid;
+  grid-template-columns: minmax(44px, 50%) auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  width: 100vw;
+}
+
+nav img#logo {
+  min-height: 44px;
+  width: auto;
+}
+
+nav button#nav_drawer {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+
+nav button#nav_drawer span {
+  font-size: 44px;
+}
+
+nav ul {
+  display: grid;
+  align-items: center;
+  gap: 5px;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 44px);
+  list-style: none;
+  margin-top: 10px;
+  position: sticky;
+  transition: all 1s;
+  z-index: 2;
+}
+
+nav ul li a {
+  font-size: 1.2em;
+  font-family: 'Afacad Flux', 'Inter', sans-serif;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+main {
+  padding: 16px;
+}
+
+main article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
